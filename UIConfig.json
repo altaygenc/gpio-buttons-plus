@@ -792,8 +792,7 @@
             "field": "shutdownEnabled",
             "value": true
           }
-        }
-
+        },
         {
           "id": "seekMinusEnabled",
           "element": "switch",
@@ -919,9 +918,6 @@
             "value": true
           }
         },
-        
-
-
         {
           "id": "seekPlusEnabled",
           "element": "switch",
@@ -1047,11 +1043,6 @@
             "value": true
           }
         },
-
-
-
-
-
         {
           "id": "volumeToggleEnabled",
           "element": "switch",
@@ -1177,9 +1168,6 @@
             "value": true
           }
         },
-
-
-
         {
           "id": "repeatEnabled",
           "element": "switch",
@@ -1305,11 +1293,6 @@
             "value": true
           }
         },
-
-
-
-
-
         {
           "id": "randomEnabled",
           "element": "switch",
@@ -1435,10 +1418,6 @@
             "value": true
           }
         },
-
-
-
-
         {
           "id": "playEnabled",
           "element": "switch",
@@ -1564,10 +1543,6 @@
             "value": true
           }
         },
-
-
-
-
         {
           "id": "pauseEnabled",
           "element": "switch",
@@ -1693,15 +1668,6 @@
             "value": true
           }
         },
-
-
-
-
-
-
-
-
-
         {
           "id": "stopEnabled",
           "element": "switch",
@@ -1827,17 +1793,6 @@
             "value": true
           }
         }
-
-
-
-
-
-
-
-
-
-
-
       ]
     }
   ]
