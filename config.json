@@ -21,7 +21,7 @@
   },
   "next":{
     "enabled": {"value": false, "type": "boolean"},
-    "pin": {"value": 24,"type":"number"},
+    "pin": {"value": 21,"type":"number"},
     "value": {"value": 0, "type": "number"}
   },
   "shutdown":{
@@ -35,42 +35,42 @@
 
   "seekMinus":{
     "enabled": {"value": false, "type": "boolean"},
-    "pin": {"value": 3,"type":"number"},
+    "pin": {"value": 13,"type":"number"},
     "value": {"value": 0, "type": "number"}
   },
   "seekPlus":{
     "enabled": {"value": false, "type": "boolean"},
-    "pin": {"value": 3,"type":"number"},
+    "pin": {"value": 19,"type":"number"},
     "value": {"value": 0, "type": "number"}
   },
   "volumeToggle":{
     "enabled": {"value": false, "type": "boolean"},
-    "pin": {"value": 3,"type":"number"},
+    "pin": {"value": 22,"type":"number"},
     "value": {"value": 0, "type": "number"}
   },
   "repeat":{
     "enabled": {"value": false, "type": "boolean"},
-    "pin": {"value": 3,"type":"number"},
+    "pin": {"value": 10,"type":"number"},
     "value": {"value": 0, "type": "number"}
   },
   "random":{
     "enabled": {"value": false, "type": "boolean"},
-    "pin": {"value": 3,"type":"number"},
+    "pin": {"value": 25,"type":"number"},
     "value": {"value": 0, "type": "number"}
   },
   "play":{
     "enabled": {"value": false, "type": "boolean"},
-    "pin": {"value": 3,"type":"number"},
+    "pin": {"value": 16,"type":"number"},
     "value": {"value": 0, "type": "number"}
   },
   "pause":{
     "enabled": {"value": false, "type": "boolean"},
-    "pin": {"value": 3,"type":"number"},
+    "pin": {"value": 24,"type":"number"},
     "value": {"value": 0, "type": "number"}
   },
   "stop":{
     "enabled": {"value": false, "type": "boolean"},
-    "pin": {"value": 3,"type":"number"},
+    "pin": {"value": 23,"type":"number"},
     "value": {"value": 0, "type": "number"}
   }
 }
