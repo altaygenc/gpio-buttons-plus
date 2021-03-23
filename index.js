@@ -292,7 +292,7 @@ GPIOButtonsPlus.prototype.volumeToggle = function() {
 };
 //repeat
 GPIOButtonsPlus.prototype.repeat = function() {
-  // this.logger.info('GPIO-Buttons-Plus: repeat button pressed\n');
+  this.logger.info('GPIO-Buttons-Plus: repeat button pressed\n');
   // socket.emit('repeat')
   socket.emit('getState','');
   socket.once('pushState', function (state) {
@@ -307,7 +307,7 @@ GPIOButtonsPlus.prototype.repeat = function() {
 };
 //random
 GPIOButtonsPlus.prototype.random = function() {
-  // this.logger.info('GPIO-Buttons-Plus: random button pressed\n');
+   this.logger.info('GPIO-Buttons-Plus: random button pressed\n');
   //socket.emit('random')
   socket.emit('getState','');
   socket.once('pushState', function (state) {
