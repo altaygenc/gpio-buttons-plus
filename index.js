@@ -294,15 +294,20 @@ GPIOButtonsPlus.prototype.volumeToggle = function() {
 GPIOButtonsPlus.prototype.repeat = function() {
   //this.logger.info('GPIO-Buttons-Plus: repeat button pressed\n');
   // socket.emit('repeat')
-  console.log("repeat-x");
+  console.log("repeatingen");
   socket.emit('getState','');
   socket.once('pushState', function (state) {
-    if(state.repeat=='true' && state.repeat=='true'){
-      socket.emit('setRepeat',{"value":"false"});
-    // } else if(state.status=='play'){
-    //   socket.emit('pause');
-    } else {
-      socket.emit('setRepeat',{"value":"true"});
+    if(state.repeat=='false' && state.repeatSingle=='false')
+    {	
+      socket.emit('setRepeat',{"value":true, "repeatSingle":false});
+    } 
+    else if(state.repeat=='true' && state.repeatSingle=='false') 
+    {
+      socket.emit('setRepeat',{"value":true, "repeatSingle":true});
+    }
+    else if(state.repeat=='true' && state.repeatSingle=='true') 
+    {
+      socket.emit('setRepeat',{"value":false, "repeatSingle":false});
     }
   });
 };
@@ -310,10 +315,10 @@ GPIOButtonsPlus.prototype.repeat = function() {
 GPIOButtonsPlus.prototype.random = function() {
    //this.logger.info('GPIO-Buttons-Plus: random button pressed\n');
   //socket.emit('random')
-  console.log("random-x");
+  console.log("randomingen");
   socket.emit('getState','');
   socket.once('pushState', function (state) {
-    if(state.random=='true' && state.random=='true'){
+    if(state.random=='true'){
       socket.emit('setRandom',{"value":"false"});
     // } else if(state.status=='play'){
     //   socket.emit('pause');
