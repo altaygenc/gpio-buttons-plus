@@ -293,12 +293,32 @@ GPIOButtonsPlus.prototype.volumeToggle = function() {
 //repeat
 GPIOButtonsPlus.prototype.repeat = function() {
   // this.logger.info('GPIO-Buttons-Plus: repeat button pressed\n');
-  socket.emit('repeat')
+  // socket.emit('repeat')
+  socket.emit('getState','');
+  socket.once('pushState', function (state) {
+    if(state.repeat=='true' && state.repeat=='true'){
+      socket.emit('setRepeat',{"value":"false"});
+    // } else if(state.status=='play'){
+    //   socket.emit('pause');
+    } else {
+      socket.emit('setRepeat',{"value":"true"});
+    }
+  });
 };
 //random
 GPIOButtonsPlus.prototype.random = function() {
   // this.logger.info('GPIO-Buttons-Plus: random button pressed\n');
-  socket.emit('random')
+  //socket.emit('random')
+  socket.emit('getState','');
+  socket.once('pushState', function (state) {
+    if(state.random=='true' && state.random=='true'){
+      socket.emit('setRandom',{"value":"false"});
+    // } else if(state.status=='play'){
+    //   socket.emit('pause');
+    } else {
+      socket.emit('setRandom',{"value":"true"});
+    }
+  });
 };
 //play
 GPIOButtonsPlus.prototype.play = function() {
